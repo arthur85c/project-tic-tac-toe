@@ -1,2 +1,40 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+body {
+  background-color: #2f0c69;
+  color: white;
+}
+h1 {
+  text-align: center;
+  margin: 50px 20px;
+}
+
+div {
+  height: 350px;
+  border: solid white;
+  border-width: thin;
+}
+
+table {
+}
+
+button {
+  color: red;
+  background-color: #2f78c9;
+}
+
+.container {
+  border: none;
+  text-align: center;
+}
+
+.board {
+  position: absolute;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+}

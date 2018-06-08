@@ -12,6 +12,78 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <h2>Sign Up Form</h2>
+      <form id="sign-up-form">
+        <table>
+          <tr>
+            <td>Email: </td>
+            <td class="input"><input type="email" name="credentials[email]" placeholder="Email" ></td>
+          </tr>
+          <tr>
+            <td>Password: </td>
+            <td class="input"><input type="password" name="credentials[password]" placeholder="Password"></td>
+          </tr>
+          <tr>
+            <td>Re-type Password: </td>
+            <td class="input"><input type="password" name="credentials[password_confirmation]" placeholder="Retype Password"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button type="submit">Sign me up!</button></td>
+          </tr>
+        </table>
+      </form>
+      <h2>Sign In Form</h2>
+      <form id="login-form">
+        <table>
+          <tr>
+            <td>Email: </td>
+            <td class="input"><input type="email" name="credentials[email]" placeholder="Email" ></td>
+          </tr>
+          <tr>
+            <td>Password: </td>
+            <td class="input"><input type="password" name="credentials[password]" placeholder="Password"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button type="submit">Login</button></td>
+          </tr>
+        </table>
+      </form>
+      <h2>Change your password</h2>
+      <form id="change-password-form">
+        <table>
+          <tr>
+            <td>Old Password: </td>
+            <td class="input"><input type="password" name="passwords[old]" placeholder="Old Password"></td>
+          </tr>
+          <tr>
+            <td>New Password: </td>
+            <td class="input"><input type="password" name="passwords[new]" placeholder="New Password"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button type="submit">Change Password</button></td>
+          </tr>
+        </table>
+      </form>
+      <hr>
+      <div class="container">
+        <div class="row-article">
+          <div class="col-xs-4 col-sm-4" id="box-1"><h2><span class="image" id="1">1</span></h2></div>
+          <div class="col-xs-4 col-sm-4"id= "box-2"><h2><span class="image" id="2">2</span></h2></div>
+          <div class="col-xs-4 col-sm-4" id="box-3"><h2><span class="image" id="3">3</span></h2></div>
+        </div>
+        <div class="row-article ">
+          <div class="col-xs-4 col-sm-4" id="box-4"><h2><span class="image" id="4">4</span></h2></div>
+          <div class="col-xs-4 col-sm-4" id="box-5"><h2><span class="image" id="5">5</span></h2></div>
+          <div class="col-xs-4 col-sm-4" id="box-6"><h2><span class="image" id="6">6</span></h2></div>
+        </div>
+        <div class="row-article">
+          <div class="col-xs-4 col-sm-4" id="box-7"><h2><span class="image" id="7">7</span></h2></div>
+          <div class="col-xs-4 col-sm-4" id="box-8"><h2><span class="image" id="8">8</span></h2></div>
+          <div class="col-xs-4 col-sm-4" id="box-9"><h2><span class="image" id="9">9</span></h2></div>
+        </div>
+      </div>
     </body>
 </html>
