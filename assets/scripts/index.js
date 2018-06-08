@@ -7,38 +7,47 @@
 // require('./example')
 
 const events = require('./events.js')
-const authEvents = require('./auth/events.js')
+const consolidation = require('./consolidations.js')
 
 $(() => {
+  $('#box-1').on('click', consolidation.square1
+  )
   $('#box-1').on('click', events.decide
   )
-  $('#box-2').on('click', function () {
-    console.log('no. 2')
-  })
-  $('#box-3').on('click', function () {
-    console.log('no. 3')
-  })
-  $('#box-4').on('click', function () {
-    console.log('no. 4')
-  })
-  $('#box-5').on('click', function () {
-    console.log('no. 5')
-  })
-  $('#box-6').on('click', function () {
-    console.log('no. 6')
-  })
-  $('#box-7').on('click', function () {
-    console.log('no. 7')
-  })
-  $('#box-8').on('click', function () {
-    console.log('no. 8')
-  })
-  $('#box-9').on('click', function () {
-    console.log('no. 9')
-  })
-  $('#sign-up-form').on('submit', authEvents.onSignUp)
-  $('#login-form').on('submit', authEvents.onSignIn)
-  $('#change-password-form').on('submit', authEvents.onChangePassword)
-  $('.signout').on('click', authEvents.onSignOut)
-})
+  $('#box-2').on('click', consolidation.square2
+  )
+  $('#box-2').on('click', events.decide
+  )
+  $('#box-3').on('click', consolidation.square3
+  )
+  $('#box-3').on('click', events.decide
+  )
+  $('#box-4').on('click', consolidation.square4
+  )
+  $('#box-4').on('click', events.decide
+  )
+  $('#box-5').on('click', consolidation.square5
+  )
+  $('#box-5').on('click', events.decide
+  )
+  $('#box-6').on('click', consolidation.square6
+  )
+  $('#box-6').on('click', events.decide
+  )
+  $('#box-7').on('click', consolidation.square7
+  )
+  $('#box-7').on('click', events.decide
+  )
+  $('#box-8').on('click', consolidation.square8
+  )
+  $('#box-8').on('click', events.decide
+  )
+  $('#box-9').on('click', consolidation.square9
+  )
+  $('#box-9').on('click', events.decide
+  )
+  // $('#sign-up-form').on('submit', authEvents.onSignUp)
+  // $('#login-form').on('submit', authEvents.onSignIn)
+  // $('#change-password-form').on('submit', authEvents.onChangePassword)
+  // $('.signout').on('click', authEvents.onSignOut)
 })
