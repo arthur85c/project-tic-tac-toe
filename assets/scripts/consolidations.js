@@ -37,70 +37,102 @@ const winOrNot = function () {
       api.updateWinLose(updateWinLoose())
     } else if (sequence[3] === 'X' && sequence[4] === 'X' && sequence[5] === 'X') {
       console.log('Fuck yeah! X WINS!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[6] === 'X' && sequence[7] === 'X' && sequence[8] === 'X') {
       console.log('Fuck yeah! X WINS!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[0] === 'X' && sequence[3] === 'X' && sequence[6] === 'X') {
       console.log('Fuck yeah! X WINS!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[1] === 'X' && sequence[4] === 'X' && sequence[7] === 'X') {
       console.log('Fuck yeah! X WINS!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[2] === 'X' && sequence[5] === 'X' && sequence[8] === 'X') {
       console.log('Fuck yeah! X WINS!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[2] === 'X' && sequence[4] === 'X' && sequence[6] === 'X') {
       console.log('Fuck yeah! X WINS!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[0] === 'X' && sequence[4] === 'X' && sequence[8] === 'X') {
       console.log('Fuck yeah! X WINS!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[0] === 'O' && sequence[1] === 'O' && sequence[2] === 'O') {
       console.log('Fuck yeah! O Wins!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[3] === 'O' && sequence[4] === 'O' && sequence[5] === 'O') {
       console.log('Fuck yeah! O Wins!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[6] === 'O' && sequence[7] === 'O' && sequence[8] === 'O') {
       console.log('Fuck yeah! O Wins!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[0] === 'O' && sequence[3] === 'O' && sequence[6] === 'O') {
       console.log('Fuck yeah! O Wins!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[1] === 'O' && sequence[4] === 'O' && sequence[7] === 'O') {
       console.log('Fuck yeah! O Wins!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[2] === 'O' && sequence[5] === 'O' && sequence[8] === 'O') {
       console.log('Fuck yeah! O Wins!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[2] === 'O' && sequence[4] === 'O' && sequence[6] === 'O') {
       console.log('Fuck yeah! O Wins!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[0] === 'O' && sequence[4] === 'O' && sequence[8] === 'O') {
       console.log('Fuck yeah! O Wins!!!!')
+      api.updateWinLose(updateWinLoose())
     }
   } else if (player1.length + player2.length === 9) {
     if (sequence[0] === 'X' && sequence[1] === 'X' && sequence[2] === 'X') {
       console.log('Fuck yeah! X WINS!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[3] === 'X' && sequence[4] === 'X' && sequence[5] === 'X') {
       console.log('Fuck yeah! X WINS!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[6] === 'X' && sequence[7] === 'X' && sequence[8] === 'X') {
       console.log('Fuck yeah! X WINS!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[0] === 'X' && sequence[3] === 'X' && sequence[6] === 'X') {
       console.log('Fuck yeah! X WINS!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[1] === 'X' && sequence[4] === 'X' && sequence[7] === 'X') {
       console.log('Fuck yeah! X WINS!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[2] === 'X' && sequence[5] === 'X' && sequence[8] === 'X') {
       console.log('Fuck yeah! X WINS!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[2] === 'X' && sequence[4] === 'X' && sequence[6] === 'X') {
       console.log('Fuck yeah! X WINS!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[0] === 'X' && sequence[4] === 'X' && sequence[8] === 'X') {
       console.log('Fuck yeah! X WINS!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[0] === 'O' && sequence[1] === 'O' && sequence[2] === 'O') {
       console.log('Fuck yeah! O Wins!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[3] === 'O' && sequence[4] === 'O' && sequence[5] === 'O') {
       console.log('Fuck yeah! O Wins!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[6] === 'O' && sequence[7] === 'O' && sequence[8] === 'O') {
       console.log('Fuck yeah! O Wins!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[0] === 'O' && sequence[3] === 'O' && sequence[6] === 'O') {
       console.log('Fuck yeah! O Wins!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[1] === 'O' && sequence[4] === 'O' && sequence[7] === 'O') {
       console.log('Fuck yeah! O Wins!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[2] === 'O' && sequence[5] === 'O' && sequence[8] === 'O') {
       console.log('Fuck yeah! O Wins!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[2] === 'O' && sequence[4] === 'O' && sequence[6] === 'O') {
       console.log('Fuck yeah! O Wins!!!!')
+      api.updateWinLose(updateWinLoose())
     } else if (sequence[0] === 'O' && sequence[4] === 'O' && sequence[8] === 'O') {
       console.log('Fuck yeah! O Wins!!!!')
+      api.updateWinLose(updateWinLoose())
     } else {
       console.log('It is a draw')
+      api.updateWinLose(updateWinLoose())
     }
   }
 }
