@@ -69,22 +69,49 @@ const find1Game = function (data) {
   })
 }
 
-const findGasdfame = function () {
+const joinGame = function (data) {
   return $.ajax({
-    method: 'GET',
-    url: 'https://tic-tac-toe-wdi.herokuapp.com/' + `/games/:id`,
+    method: 'PATCH',
+    url: 'https://tic-tac-toe-wdi.herokuapp.com/' + 'games/' + data.game.id,
     headers: {
       Authorization: 'Token token=' + store.user.token
     }
   })
 }
 
+const updateGame = function (data) {
+  return $.ajax({
+    method: 'PATCH',
+    url: 'https://tic-tac-toe-wdi.herokuapp.com/' + 'games/' + store.newGame.id,
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    body: 'game delta',
+    data
+  })
+}
+
+const updateWinLose = function (data) {
+  return $.ajax({
+    method: 'PATCH',
+    url: 'https://tic-tac-toe-wdi.herokuapp.com/' + 'games/' + store.newGame.id,
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    body: 'game delta',
+    data
+  })
+}
+
 module.exports = {
-  signUp: signUp,
-  signIn: signIn,
-  changePassword: changePassword,
-  signOut: signOut,
-  findGame: findGame,
-  createGame: createGame,
-  find1Game: find1Game
+  signUp,
+  signIn,
+  changePassword,
+  signOut,
+  findGame,
+  createGame,
+  find1Game,
+  joinGame,
+  updateGame,
+  updateWinLose
 }
