@@ -1,4 +1,4 @@
-const sequence = []
+const sequence = [,,,,,,,,,]
 
 const square1 = function () {
   if (sequence.includes(1)) {
@@ -61,6 +61,37 @@ const square9 = function () {
   } else {
     sequence.push(9)
   }
+}
+
+const player1 = function () {
+  let even = []
+  for (let i = 0; i <= sequence.length; i++) {
+    if (i % 2 === 0) {
+      even.push(sequence[i])
+    }
+  } return even
+}
+
+const player2 = function () {
+  let odd = []
+  for (let i = 0; i < sequence.length; i++) {
+    if (i % 2 === 1) {
+      odd.push(sequence[i])
+    }
+  } return odd
+}
+
+const win = function () {
+  let player1Move = player1().sort(function(a, b){return a-b})
+  let player2Move = player2().sort(function(a, b){return a-b})
+
+    if (player1Move.includes(1)) {
+      alpha
+  } else if (player1Move.includes(2)) {
+    alpha
+  } else if (player1Move.includes(3)) {
+    alpha
+  } else if (player1Move.includes(4)) {}
 }
 
 module.exports = {

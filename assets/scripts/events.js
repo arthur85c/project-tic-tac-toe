@@ -1,5 +1,8 @@
 const store = require('./store.js')
 const consolidation = require('./consolidations.js')
+const api = require('./api.js')
+const getFormFields = require('../../lib/get-form-fields.js')
+const ui = require('./ui.js')
 const sequence = consolidation.sequence
 
 const decide = function () {
@@ -12,6 +15,69 @@ const decide = function () {
   }
 }
 
+const onSignUp = function (event) {
+  event.preventDefault()
+  const data = getFormFields(event.target)
+  api.signUp(data)
+    .then()
+    .catch()
+}
+
+const onSignIn = function (event) {
+  event.preventDefault()
+  const data = getFormFields(event.target)
+
+  api.signIn(data)
+    .then(ui.signInSuccess)
+    .catch()
+}
+
+const onChangePassword = function (event) {
+  event.preventDefault()
+  const data = getFormFields(event.target)
+
+  api.changePassword(data)
+    .then()
+    .catch()
+}
+
+const onSignOut = function (event) {
+  event.preventDefault()
+  api.signOut()
+    .then()
+    .catch()
+}
+
+const onGetGame = function (event) {
+  event.preventDefault()
+  api.findGame()
+    .then(ui.getGameSuccess)
+    .catch()
+}
+
+const onCreateGame = function (event) {
+  event.preventDefault()
+  api.createGame()
+    .then(ui.createGameSuccess)
+    .catch()
+}
+
+const onspecificGame = function (event) {
+  event.preventDefault()
+  const data = getFormFields(event.target)
+  console.log(data)
+  api.find1Game(data)
+    .then(ui.specificGameSuccess)
+    .catch()
+}
+
 module.exports = {
-  decide: decide
+  decide: decide,
+  onSignUp: onSignUp,
+  onSignIn: onSignIn,
+  onChangePassword: onChangePassword,
+  onSignOut: onSignOut,
+  onGetGame: onGetGame,
+  onCreateGame: onCreateGame,
+  onspecificGame: onspecificGame
 }

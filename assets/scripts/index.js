@@ -46,8 +46,12 @@ $(() => {
   )
   $('#box-9').on('click', events.decide
   )
-  // $('#sign-up-form').on('submit', authEvents.onSignUp)
-  // $('#login-form').on('submit', authEvents.onSignIn)
-  // $('#change-password-form').on('submit', authEvents.onChangePassword)
-  // $('.signout').on('click', authEvents.onSignOut)
+  $('#sign-up-form').on('submit', events.onSignUp)
+  $('#login-form').on('submit', events.onSignIn)
+  $('#change-password-form').on('submit', events.onChangePassword)
+  $('.signout').on('click', events.onSignOut)
+  $('.getGame').on('click', events.onGetGame)
+  $('.createGame').on('click', events.onCreateGame)
+  $('.specificGame').on('submit', events.onspecificGame)
+
 })
