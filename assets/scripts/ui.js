@@ -46,23 +46,25 @@ const getGameSuccess = function (response) {
 
 const createGameSuccess = function (response) {
   store.newGame = response.game
+  $('.game').show()
   $('#change-pw.afterSignin').html(``)
   $('.game').html(`
           <div class="row-article text-center">
-            <div class="col-xs-4 col-sm-4" id="box-1"><h2><span class="image" id="0">0</span></h2></div>
-            <div class="col-xs-4 col-sm-4" id= "box-2"><h2><span class="image" id="1">1</span></h2></div>
-            <div class="col-xs-4 col-sm-4" id="box-3"><h2><span class="image" id="2">2</span></h2></div>
+            <div class="col-xs-4 col-sm-4 box" id="box-1"><h2><span class="image" id="0">0</span></h2></div>
+            <div class="col-xs-4 col-sm-4 box" id= "box-2"><h2><span class="image" id="1">1</span></h2></div>
+            <div class="col-xs-4 col-sm-4 box" id="box-3"><h2><span class="image" id="2">2</span></h2></div>
           </div>
           <div class="row-article text-center">
-            <div class="col-xs-4 col-sm-4" id="box-4"><h2><span class="image" id="3">3</span></h2></div>
-            <div class="col-xs-4 col-sm-4" id="box-5"><h2><span class="image" id="4">4</span></h2></div>
-            <div class="col-xs-4 col-sm-4" id="box-6"><h2><span class="image" id="5">5</span></h2></div>
+            <div class="col-xs-4 col-sm-4 box" id="box-4"><h2><span class="image" id="3">3</span></h2></div>
+            <div class="col-xs-4 col-sm-4 box" id="box-5"><h2><span class="image" id="4">4</span></h2></div>
+            <div class="col-xs-4 col-sm-4 box" id="box-6"><h2><span class="image" id="5">5</span></h2></div>
           </div>
           <div class="row-article text-center">
-            <div class="col-xs-4 col-sm-4" id="box-7"><h2><span class="image" id="6">6</span></h2></div>
-            <div class="col-xs-4 col-sm-4" id="box-8"><h2><span class="image" id="7">7</span></h2></div>
-            <div class="col-xs-4 col-sm-4" id="box-9"><h2><span class="image" id="8">8</span></h2></div>
-          </div>`)
+            <div class="col-xs-4 col-sm-4 box" id="box-7"><h2><span class="image" id="6">6</span></h2></div>
+            <div class="col-xs-4 col-sm-4 box" id="box-8"><h2><span class="image" id="7">7</span></h2></div>
+            <div class="col-xs-4 col-sm-4 box" id="box-9"><h2><span class="image" id="8">8</span></h2></div>
+          </div>
+          <p></p>`)
   store.player1 = []
   store.player2 = []
 }
@@ -84,6 +86,7 @@ const signoutSuccess = function (response) {
   $('#change-pw.afterSignin').html(``)
   $('#allOthers.afterSignin').html(``)
   $('.sign-in').html(`
+    <div class="alert alert-success" role="alert">Signout Successful</div>
     <h2>Sign In</h2>
     <form id="login-form">
       <div class="form-group">
@@ -140,7 +143,7 @@ const changePWfail = function (resposne) {
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 <p></p>
-<span id="fail">Incorrect Password, please try again!</span>`)
+<div class="alert alert-danger" role="alert">Incorrect Password, please try again!</div>`)
 }
 
 module.exports = {

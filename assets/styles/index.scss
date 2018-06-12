@@ -12,7 +12,7 @@ h1 {
   margin: 50px 20px;
 }
 
-.game {
+.box {
   border: 2px solid #fff;
   border-width: thin;
   height: 350px;
@@ -53,42 +53,6 @@ main {
   border: none;
 }
 
-#change-pw {
-  border: none;
-  height:auto;
-  width: auto;
-}
-
-.form-group {
-  width: auto;
-  height: auto;
-  border: none;
-}
-
-.form-check {
-  width: auto;
-  height: auto;
-  border: none;
-}
-
-.sign-up {
-  width: auto;
-  height: auto;
-  border: none;
-}
-
-.sign-in {
-  width: auto;
-  height: auto;
-  border: none;
-}
-
 .submit-form {
   font-size: 15px;
-}
-
-#allOthers {
-  width: auto;
-  height: auto;
-  border: none;
 }

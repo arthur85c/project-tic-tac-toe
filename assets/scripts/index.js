@@ -10,6 +10,7 @@ const events = require('./events.js')
 const consolidation = require('./consolidations.js')
 
 $(() => {
+  $('.game').hide()
   $('.game').on('click', '#box-1', consolidation.square0)
   $('.game').on('click', '#box-2', consolidation.square1)
   $('.game').on('click', '#box-3', consolidation.square2)
