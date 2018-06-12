@@ -10,30 +10,22 @@ const events = require('./events.js')
 const consolidation = require('./consolidations.js')
 
 $(() => {
-  $('#box-1').on('click', consolidation.square0
-  )
-  $('#box-2').on('click', consolidation.square1
-  )
-  $('#box-3').on('click', consolidation.square2
-  )
-  $('#box-4').on('click', consolidation.square3
-  )
-  $('#box-5').on('click', consolidation.square4
-  )
-  $('#box-6').on('click', consolidation.square5
-  )
-  $('#box-7').on('click', consolidation.square6
-  )
-  $('#box-8').on('click', consolidation.square7
-  )
-  $('#box-9').on('click', consolidation.square8
-  )
-  $('#sign-up-form').on('submit', events.onSignUp)
-  $('#login-form').on('submit', events.onSignIn)
-  $('#change-password-form').on('submit', events.onChangePassword)
-  $('.signout').on('click', events.onSignOut)
-  $('.getGame').on('click', events.onGetGame)
-  $('.createGame').on('click', events.onCreateGame)
-  $('.specificGame').on('submit', events.onspecificGame)
-  $('.join-game').on('submit', events.onJoinGame)
+  $('.game').on('click', '#box-1', consolidation.square0)
+  $('.game').on('click', '#box-2', consolidation.square1)
+  $('.game').on('click', '#box-3', consolidation.square2)
+  $('.game').on('click', '#box-4', consolidation.square3)
+  $('.game').on('click', '#box-5', consolidation.square4)
+  $('.game').on('click', '#box-6', consolidation.square5)
+  $('.game').on('click', '#box-7', consolidation.square6)
+  $('.game').on('click', '#box-8', consolidation.square7)
+  $('.game').on('click', '#box-9', consolidation.square8)
+  $('.sign-up').on('submit', '#sign-up-form', events.onSignUp)
+  $('.sign-in').on('submit', '#login-form', events.onSignIn)
+  $('.afterSignin').on('submit', '#change-password-form', events.onChangePassword)
+  $('.afterSignin').on('click', '.signout', events.onSignOut)
+  $('.afterSignin').on('click', '.getGame', events.onGetGame)
+  $('.afterSignin').on('click', '.createGame', events.onCreateGame)
+  $('afterSignin').on('submit', '.specificGame', events.onspecificGame)
+  $('.sign-in').on('click', '.generate-sign-up-form', events.onSignUpShow)
+  $('.afterSignin').on('click', '.changePasswordForm', events.onChangePWshow)
 })

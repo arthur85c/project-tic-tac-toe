@@ -6,33 +6,33 @@ body {
   background-color: #2f0c69;
   color: white;
 }
+
 h1 {
   text-align: center;
   margin: 50px 20px;
 }
 
-div {
-  border: solid white;
+.game {
+  border: 2px solid #fff;
   border-width: thin;
   height: 350px;
 }
 
-.input {
-  color: black;
-}
-
 button {
-  color: red;
-  background-color: #2f78c9;
+  color: green;
+  background-color: #f8b0a0;
 }
 
 input {
   color: black;
 }
 
+main {
+  float: none;
+}
+
 .container {
   border: none;
-  text-align: center;
 }
 
 .board {
@@ -45,5 +45,50 @@ input {
 }
 
 .row-article {
+  border: none;
+  margin: 1px;
+}
+
+.clearfix {
+  border: none;
+}
+
+#change-pw {
+  border: none;
+  height:auto;
+  width: auto;
+}
+
+.form-group {
+  width: auto;
+  height: auto;
+  border: none;
+}
+
+.form-check {
+  width: auto;
+  height: auto;
+  border: none;
+}
+
+.sign-up {
+  width: auto;
+  height: auto;
+  border: none;
+}
+
+.sign-in {
+  width: auto;
+  height: auto;
+  border: none;
+}
+
+.submit-form {
+  font-size: 15px;
+}
+
+#allOthers {
+  width: auto;
+  height: auto;
   border: none;
 }

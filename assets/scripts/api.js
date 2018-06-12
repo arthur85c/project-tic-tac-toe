@@ -69,16 +69,6 @@ const find1Game = function (data) {
   })
 }
 
-const joinGame = function (data) {
-  return $.ajax({
-    method: 'PATCH',
-    url: 'https://tic-tac-toe-wdi.herokuapp.com/' + 'games/' + data.game.id,
-    headers: {
-      Authorization: 'Token token=' + store.user.token
-    }
-  })
-}
-
 const updateGame = function (data) {
   return $.ajax({
     method: 'PATCH',
@@ -111,7 +101,6 @@ module.exports = {
   findGame,
   createGame,
   find1Game,
-  joinGame,
   updateGame,
   updateWinLose
 }
