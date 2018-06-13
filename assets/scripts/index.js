@@ -26,7 +26,8 @@ $(() => {
   $('.afterSignin').on('click', '.signout', events.onSignOut)
   $('.afterSignin').on('click', '.getGame', events.onGetGame)
   $('.afterSignin').on('click', '.createGame', events.onCreateGame)
-  $('afterSignin').on('submit', '.specificGame', events.onspecificGame)
   $('.sign-in').on('click', '.generate-sign-up-form', events.onSignUpShow)
   $('.afterSignin').on('click', '.changePasswordForm', events.onChangePWshow)
 })
+
+  // $('.afterSignin').on('submit', '.specificGame', events.onspecificGame)

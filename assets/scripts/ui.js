@@ -7,12 +7,18 @@ const signInSuccess = function (response) {
   $('#allOthers.afterSignin').html(`
     <button type="submit" class="changePasswordForm">Change Password</button><p></p>
   <button type="submit" class="getGame">Get Game</button><p></p>
-  <button type="submit" class="createGame">Create Game</button><p></p>
-  <form class="specificGame">
-    <input required type="text" name="game[id]" placeholder="Check specific game">
-    <button type="submit">Get Specific Game</button>
-    </form><p></p>
-      <button type="submit" class="signout">Sign out</button><p></p>`)
+  <button type="submit" class="createGame">New Game</button><p></p>
+  <button type="submit" class="signout">Sign out</button><p></p>`)
+}
+
+// <form class="specificGame">
+//   <input required type="text" name="game[id]" placeholder="Check specific game">
+//   <button type="submit">Get Specific Game</button>
+//   </form><p></p>
+
+const signInFail = function (response) {
+  $('.sign-up').html(``)
+  $('.sign-up').html(`<p></p><div class="alert alert-danger" role="alert">Incorrect Password, please try again</div>`)
 }
 
 const showSignInForm = function () {
@@ -41,7 +47,8 @@ const showSignInForm = function () {
 }
 
 const getGameSuccess = function (response) {
-  console.log(response)
+  $('.game').append('<div class="gameScore"></div>')
+  $('.gameScore').html(`You have played ` + response.games.length + ` games(s)`)
 }
 
 const createGameSuccess = function (response) {
@@ -70,7 +77,8 @@ const createGameSuccess = function (response) {
 }
 
 const specificGameSuccess = function (response) {
-  console.log(response)
+  console.log(response.game.length)
+  // $('.sign-up').html(`response.length`)
 }
 
 const specificGameFail = function (response) {
@@ -78,15 +86,39 @@ const specificGameFail = function (response) {
 }
 
 const createSuccess = function (response) {
-  $('.sign-up').html(`<span class="submit-form">Now sign in down below!</span>`)
+  $('.sign-up').html(`<div class="alert alert-success" role="alert">Now sign in down below!</div>`)
+}
+
+const createFail = function (response) {
+  $('.sign-up').html(`<div class="alert alert-danger" role="alert">Email may be already taken, or passwords needs to be identical. Please try again!</div>
+  <div class="alert alert-warning" role="alert">
+  <h2>Sign up</h2>
+  <form id="sign-up-form">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" name="credentials[email]" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" name="credentials[password]" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password Confirmation</label>
+      <input type="password" class="form-control" name="credentials[password_confirmation]" placeholder="Password">
+    </div>
+    <div class="form-check">
+    <button type="submit" class="btn btn-primary">Sign Me Up!</button>
+    </div>
+  </form>
+  </div>`)
 }
 
 const signoutSuccess = function (response) {
   $('.game').html(``)
   $('#change-pw.afterSignin').html(``)
   $('#allOthers.afterSignin').html(``)
+  $('.sign-up').html(`<div class="alert alert-success" role="alert">Signout Successful</div>`)
   $('.sign-in').html(`
-    <div class="alert alert-success" role="alert">Signout Successful</div>
     <h2>Sign In</h2>
     <form id="login-form">
       <div class="form-group">
@@ -143,7 +175,7 @@ const changePWfail = function (resposne) {
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 <p></p>
-<div class="alert alert-danger" role="alert">Incorrect Password, please try again!</div>`)
+<div class="alert alert-danger" role="alert">Your previous password did not match our record, please try again!</div>`)
 }
 
 module.exports = {
@@ -158,5 +190,7 @@ module.exports = {
   signoutFail,
   showChangePWForm,
   changePWsuccess,
-  changePWfail
+  changePWfail,
+  createFail,
+  signInFail
 }
