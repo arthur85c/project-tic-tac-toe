@@ -30,43 +30,33 @@ const updateWinLoose = function () {
 const winOrNot = function () {
   if (store.player1.length + store.player2.length < 9) {
     if (store.newGame.cells[0] === 'X' && store.newGame.cells[1] === 'X' && store.newGame.cells[2] === 'X') {
-      console.log('Fuck yeah! X WINS!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[3] === 'X' && store.newGame.cells[4] === 'X' && store.newGame.cells[5] === 'X') {
-      console.log('Fuck yeah! X WINS!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[6] === 'X' && store.newGame.cells[7] === 'X' && store.newGame.cells[8] === 'X') {
-      console.log('Fuck yeah! X WINS!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[0] === 'X' && store.newGame.cells[3] === 'X' && store.newGame.cells[6] === 'X') {
-      console.log('Fuck yeah! X WINS!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[1] === 'X' && store.newGame.cells[4] === 'X' && store.newGame.cells[7] === 'X') {
-      console.log('Fuck yeah! X WINS!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[2] === 'X' && store.newGame.cells[5] === 'X' && store.newGame.cells[8] === 'X') {
-      console.log('Fuck yeah! X WINS!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[2] === 'X' && store.newGame.cells[4] === 'X' && store.newGame.cells[6] === 'X') {
-      console.log('Fuck yeah! X WINS!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[0] === 'X' && store.newGame.cells[4] === 'X' && store.newGame.cells[8] === 'X') {
-      console.log('Fuck yeah! X WINS!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[0] === 'O' && store.newGame.cells[1] === 'O' && store.newGame.cells[2] === 'O') {
-      console.log('Fuck yeah! O Wins!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[3] === 'O' && store.newGame.cells[4] === 'O' && store.newGame.cells[5] === 'O') {
-      console.log('Fuck yeah! O Wins!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[6] === 'O' && store.newGame.cells[7] === 'O' && store.newGame.cells[8] === 'O') {
@@ -74,93 +64,71 @@ const winOrNot = function () {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[0] === 'O' && store.newGame.cells[3] === 'O' && store.newGame.cells[6] === 'O') {
-      console.log('Fuck yeah! O Wins!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[1] === 'O' && store.newGame.cells[4] === 'O' && store.newGame.cells[7] === 'O') {
-      console.log('Fuck yeah! O Wins!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[2] === 'O' && store.newGame.cells[5] === 'O' && store.newGame.cells[8] === 'O') {
-      console.log('Fuck yeah! O Wins!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[2] === 'O' && store.newGame.cells[4] === 'O' && store.newGame.cells[6] === 'O') {
-      console.log('Fuck yeah! O Wins!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[0] === 'O' && store.newGame.cells[4] === 'O' && store.newGame.cells[8] === 'O') {
-      console.log('Fuck yeah! O Wins!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     }
   } else if (store.player1.length + store.player2.length === 9) {
     if (store.newGame.cells[0] === 'X' && store.newGame.cells[1] === 'X' && store.newGame.cells[2] === 'X') {
-      console.log('Fuck yeah! X WINS!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[3] === 'X' && store.newGame.cells[4] === 'X' && store.newGame.cells[5] === 'X') {
-      console.log('Fuck yeah! X WINS!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[6] === 'X' && store.newGame.cells[7] === 'X' && store.newGame.cells[8] === 'X') {
-      console.log('Fuck yeah! X WINS!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[0] === 'X' && store.newGame.cells[3] === 'X' && store.newGame.cells[6] === 'X') {
-      console.log('Fuck yeah! X WINS!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[1] === 'X' && store.newGame.cells[4] === 'X' && store.newGame.cells[7] === 'X') {
-      console.log('Fuck yeah! X WINS!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[2] === 'X' && store.newGame.cells[5] === 'X' && store.newGame.cells[8] === 'X') {
-      console.log('Fuck yeah! X WINS!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[2] === 'X' && store.newGame.cells[4] === 'X' && store.newGame.cells[6] === 'X') {
-      console.log('Fuck yeah! X WINS!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[0] === 'X' && store.newGame.cells[4] === 'X' && store.newGame.cells[8] === 'X') {
-      console.log('Fuck yeah! X WINS!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[0] === 'O' && store.newGame.cells[1] === 'O' && store.newGame.cells[2] === 'O') {
-      console.log('Fuck yeah! O Wins!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[3] === 'O' && store.newGame.cells[4] === 'O' && store.newGame.cells[5] === 'O') {
-      console.log('Fuck yeah! O Wins!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[6] === 'O' && store.newGame.cells[7] === 'O' && store.newGame.cells[8] === 'O') {
-      console.log('Fuck yeah! O Wins!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[0] === 'O' && store.newGame.cells[3] === 'O' && store.newGame.cells[6] === 'O') {
-      console.log('Fuck yeah! O Wins!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[1] === 'O' && store.newGame.cells[4] === 'O' && store.newGame.cells[7] === 'O') {
-      console.log('Fuck yeah! O Wins!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[2] === 'O' && store.newGame.cells[5] === 'O' && store.newGame.cells[8] === 'O') {
-      console.log('Fuck yeah! O Wins!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[2] === 'O' && store.newGame.cells[4] === 'O' && store.newGame.cells[6] === 'O') {
-      console.log('Fuck yeah! O Wins!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else if (store.newGame.cells[0] === 'O' && store.newGame.cells[4] === 'O' && store.newGame.cells[8] === 'O') {
-      console.log('Fuck yeah! O Wins!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     } else {
-      console.log('It is a draw')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
     }

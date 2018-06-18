@@ -47,8 +47,8 @@ const showSignInForm = function () {
 }
 
 const getGameSuccess = function (response) {
-  $('.game').append('<div class="gameScore"></div>')
-  $('.gameScore').html(`You have played ` + response.games.length + ` games(s)`)
+  $('.scorescount').html('')
+  $('.scorescount').html(`You have played ` + response.games.length + ` games(s)`)
 }
 
 const createGameSuccess = function (response) {
@@ -117,6 +117,7 @@ const signoutSuccess = function (response) {
   $('.game').html(``)
   $('#change-pw.afterSignin').html(``)
   $('#allOthers.afterSignin').html(``)
+  $('.scorescount').html(``)
   $('.sign-up').html(`<div class="alert alert-success" role="alert">Signout Successful</div>`)
   $('.sign-in').html(`
     <h2>Sign In</h2>
