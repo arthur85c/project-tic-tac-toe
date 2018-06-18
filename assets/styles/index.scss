@@ -5,6 +5,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 body {
   background-color: #2f0c69;
   color: white;
+  font-family: 'Hind', sans-serif;
 }
 
 h1 {
@@ -21,6 +22,8 @@ h1 {
 button {
   color: green;
   background-color: #f8b0a0;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 24px;
 }
 
 input {
@@ -55,4 +58,14 @@ main {
 
 .submit-form {
   font-size: 15px;
+}
+
+.scorescount {
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  text-align: center;
+  color: yellow;
 }
