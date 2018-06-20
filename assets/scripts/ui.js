@@ -181,8 +181,15 @@ const changePWfail = function (resposne) {
 }
 
 const win = function (player) {
+  $('.scorescount').html(``)
   $('.scorescount').html(`
     Player ${player} WON!`)
+}
+
+const tie = function () {
+  $('.scorescount').html(``)
+  $('.scorescount').html(`
+    It is a draw!`)
 }
 
 module.exports = {
@@ -200,5 +207,6 @@ module.exports = {
   changePWfail,
   createFail,
   signInFail,
-  win
+  win,
+  tie
 }

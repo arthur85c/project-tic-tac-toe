@@ -162,6 +162,7 @@ const winOrNot = function () {
     } else {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.tie()
     }
   }
 }
