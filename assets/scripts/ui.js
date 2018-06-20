@@ -54,6 +54,7 @@ const getGameSuccess = function (response) {
 const createGameSuccess = function (response) {
   store.newGame = response.game
   $('.game').show()
+  $('.scorescount').html('')
   $('#change-pw.afterSignin').html(``)
   $('.game').html(`
           <div class="row-article text-center">
@@ -179,6 +180,11 @@ const changePWfail = function (resposne) {
 <div class="alert alert-danger" role="alert">Your previous password did not match our record, please try again!</div>`)
 }
 
+const win = function (player) {
+  $('.scorescount').html(`
+    Player ${player} WON!`)
+}
+
 module.exports = {
   signInSuccess,
   getGameSuccess,
@@ -193,5 +199,6 @@ module.exports = {
   changePWsuccess,
   changePWfail,
   createFail,
-  signInFail
+  signInFail,
+  win
 }

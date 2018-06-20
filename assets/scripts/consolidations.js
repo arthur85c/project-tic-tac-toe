@@ -1,5 +1,6 @@
 const api = require('./api.js')
 const store = require('./store.js')
+const ui = require('./ui.js')
 
 const update = function (index, values) {
   const data = {
@@ -32,52 +33,67 @@ const winOrNot = function () {
     if (store.newGame.cells[0] === 'X' && store.newGame.cells[1] === 'X' && store.newGame.cells[2] === 'X') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('X')
     } else if (store.newGame.cells[3] === 'X' && store.newGame.cells[4] === 'X' && store.newGame.cells[5] === 'X') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('X')
     } else if (store.newGame.cells[6] === 'X' && store.newGame.cells[7] === 'X' && store.newGame.cells[8] === 'X') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('X')
     } else if (store.newGame.cells[0] === 'X' && store.newGame.cells[3] === 'X' && store.newGame.cells[6] === 'X') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('X')
     } else if (store.newGame.cells[1] === 'X' && store.newGame.cells[4] === 'X' && store.newGame.cells[7] === 'X') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('X')
     } else if (store.newGame.cells[2] === 'X' && store.newGame.cells[5] === 'X' && store.newGame.cells[8] === 'X') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('X')
     } else if (store.newGame.cells[2] === 'X' && store.newGame.cells[4] === 'X' && store.newGame.cells[6] === 'X') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('X')
     } else if (store.newGame.cells[0] === 'X' && store.newGame.cells[4] === 'X' && store.newGame.cells[8] === 'X') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('X')
     } else if (store.newGame.cells[0] === 'O' && store.newGame.cells[1] === 'O' && store.newGame.cells[2] === 'O') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('O')
     } else if (store.newGame.cells[3] === 'O' && store.newGame.cells[4] === 'O' && store.newGame.cells[5] === 'O') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('O')
     } else if (store.newGame.cells[6] === 'O' && store.newGame.cells[7] === 'O' && store.newGame.cells[8] === 'O') {
-      console.log('Fuck yeah! O Wins!!!!')
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('O')
     } else if (store.newGame.cells[0] === 'O' && store.newGame.cells[3] === 'O' && store.newGame.cells[6] === 'O') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('O')
     } else if (store.newGame.cells[1] === 'O' && store.newGame.cells[4] === 'O' && store.newGame.cells[7] === 'O') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('O')
     } else if (store.newGame.cells[2] === 'O' && store.newGame.cells[5] === 'O' && store.newGame.cells[8] === 'O') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('O')
     } else if (store.newGame.cells[2] === 'O' && store.newGame.cells[4] === 'O' && store.newGame.cells[6] === 'O') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('O')
     } else if (store.newGame.cells[0] === 'O' && store.newGame.cells[4] === 'O' && store.newGame.cells[8] === 'O') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('O')
     }
   } else if (store.player1.length + store.player2.length === 9) {
     if (store.newGame.cells[0] === 'X' && store.newGame.cells[1] === 'X' && store.newGame.cells[2] === 'X') {
@@ -86,48 +102,63 @@ const winOrNot = function () {
     } else if (store.newGame.cells[3] === 'X' && store.newGame.cells[4] === 'X' && store.newGame.cells[5] === 'X') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('X')
     } else if (store.newGame.cells[6] === 'X' && store.newGame.cells[7] === 'X' && store.newGame.cells[8] === 'X') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('X')
     } else if (store.newGame.cells[0] === 'X' && store.newGame.cells[3] === 'X' && store.newGame.cells[6] === 'X') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('X')
     } else if (store.newGame.cells[1] === 'X' && store.newGame.cells[4] === 'X' && store.newGame.cells[7] === 'X') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('X')
     } else if (store.newGame.cells[2] === 'X' && store.newGame.cells[5] === 'X' && store.newGame.cells[8] === 'X') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('X')
     } else if (store.newGame.cells[2] === 'X' && store.newGame.cells[4] === 'X' && store.newGame.cells[6] === 'X') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('X')
     } else if (store.newGame.cells[0] === 'X' && store.newGame.cells[4] === 'X' && store.newGame.cells[8] === 'X') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('X')
     } else if (store.newGame.cells[0] === 'O' && store.newGame.cells[1] === 'O' && store.newGame.cells[2] === 'O') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('O')
     } else if (store.newGame.cells[3] === 'O' && store.newGame.cells[4] === 'O' && store.newGame.cells[5] === 'O') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('O')
     } else if (store.newGame.cells[6] === 'O' && store.newGame.cells[7] === 'O' && store.newGame.cells[8] === 'O') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('O')
     } else if (store.newGame.cells[0] === 'O' && store.newGame.cells[3] === 'O' && store.newGame.cells[6] === 'O') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('O')
     } else if (store.newGame.cells[1] === 'O' && store.newGame.cells[4] === 'O' && store.newGame.cells[7] === 'O') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('O')
     } else if (store.newGame.cells[2] === 'O' && store.newGame.cells[5] === 'O' && store.newGame.cells[8] === 'O') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('O')
     } else if (store.newGame.cells[2] === 'O' && store.newGame.cells[4] === 'O' && store.newGame.cells[6] === 'O') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('O')
     } else if (store.newGame.cells[0] === 'O' && store.newGame.cells[4] === 'O' && store.newGame.cells[8] === 'O') {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
+      ui.win('O')
     } else {
       api.updateWinLose(updateWinLoose())
       store.newGame.over = true
@@ -145,7 +176,7 @@ const inputImage = function (variable, square) {
 
 const square0 = function () {
   if (store.newGame.over === false) {
-    if (store.newGame.cells[0] === "") {
+    if (store.newGame.cells[0] === '') {
       if (store.player1.length === store.player2.length) {
         store.player1.push('x')
         store.newGame.cells[0] = 'X'
@@ -165,7 +196,7 @@ const square0 = function () {
 
 const square1 = function () {
   if (store.newGame.over === false) {
-    if (store.newGame.cells[1] === "") {
+    if (store.newGame.cells[1] === '') {
       if (store.player1.length === store.player2.length) {
         store.player1.push('x')
         store.newGame.cells[1] = 'X'
@@ -185,7 +216,7 @@ const square1 = function () {
 
 const square2 = function () {
   if (store.newGame.over === false) {
-    if (store.newGame.cells[2] === "") {
+    if (store.newGame.cells[2] === '') {
       if (store.player1.length === store.player2.length) {
         store.player1.push('x')
         store.newGame.cells[2] = 'X'
@@ -205,7 +236,7 @@ const square2 = function () {
 
 const square3 = function () {
   if (store.newGame.over === false) {
-    if (store.newGame.cells[3] === "") {
+    if (store.newGame.cells[3] === '') {
       if (store.player1.length === store.player2.length) {
         store.player1.push('x')
         store.newGame.cells[3] = 'X'
@@ -225,7 +256,7 @@ const square3 = function () {
 
 const square4 = function () {
   if (store.newGame.over === false) {
-    if (store.newGame.cells[4] === "") {
+    if (store.newGame.cells[4] === '') {
       if (store.player1.length === store.player2.length) {
         store.player1.push('x')
         store.newGame.cells[4] = 'X'
@@ -245,7 +276,7 @@ const square4 = function () {
 
 const square5 = function () {
   if (store.newGame.over === false) {
-    if (store.newGame.cells[5] === "") {
+    if (store.newGame.cells[5] === '') {
       if (store.player1.length === store.player2.length) {
         store.player1.push('x')
         store.newGame.cells[5] = 'X'
@@ -265,7 +296,7 @@ const square5 = function () {
 
 const square6 = function () {
   if (store.newGame.over === false) {
-    if (store.newGame.cells[6] === "") {
+    if (store.newGame.cells[6] === '') {
       if (store.player1.length === store.player2.length) {
         store.player1.push('x')
         store.newGame.cells[6] = 'X'
@@ -285,7 +316,7 @@ const square6 = function () {
 
 const square7 = function () {
   if (store.newGame.over === false) {
-    if (store.newGame.cells[7] === "") {
+    if (store.newGame.cells[7] === '') {
       if (store.player1.length === store.player2.length) {
         store.player1.push('x')
         store.newGame.cells[7] = 'X'
@@ -305,7 +336,7 @@ const square7 = function () {
 
 const square8 = function () {
   if (store.newGame.over === false) {
-    if (store.newGame.cells[8] === "") {
+    if (store.newGame.cells[8] === '') {
       if (store.player1.length === store.player2.length) {
         store.player1.push('x')
         store.newGame.cells[8] = 'X'
