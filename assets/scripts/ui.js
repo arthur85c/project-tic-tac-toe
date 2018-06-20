@@ -19,6 +19,23 @@ const signInSuccess = function (response) {
 const signInFail = function (response) {
   $('.sign-up').html(``)
   $('.sign-up').html(`<p></p><div class="alert alert-danger" role="alert">Incorrect Password, please try again</div>`)
+  $('.sign-in').html(`
+    <h2>Sign In</h2>
+    <form id="login-form">
+      <div class="form-group">
+        <label>Email address</label>
+        <input type="email" class="form-control" name="credentials[email]" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" name="credentials[password]" placeholder="Password">
+      </div>
+      <div class="form-check">
+        <button type="submit" class="btn btn-primary">Login</button>
+      </div>
+      <span>Don't have an account? Click on the button to make a new account! ---->  </span><button type="submit" class="generate-sign-up-form">Click me!</button>
+    </form>
+    `)
 }
 
 const showSignInForm = function () {
