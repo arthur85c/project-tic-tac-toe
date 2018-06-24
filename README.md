@@ -17,7 +17,6 @@ I wrote out my HTML first, created a simple tic tac toe board to which event lis
 
 Wireframe
 
-Here is the wireframe i have created for my project before actually building it out.
 -
 -
 
