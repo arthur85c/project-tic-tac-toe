@@ -41,5 +41,5 @@ Adding Features
 - Have a mobile friendly website. My current website can't be displayed correctly on a mobile.
 
 
-Development Process
-I followed my plan pretty well. The onlything that I did not follow was I ended up adding in the API first before finishing my game engin. The reason being that my game engin wasnt outputting the format the the API required it to be. So I ended up scrapping my game engin, implemented the API to ensure what my game engin generates can be used by the API. This was the main obstical that I ran into while mfinishing this project. 
+Development Process <br>
+I followed my plan pretty well. The onlything that I did not follow was I ended up adding in the API first before finishing my game engin. The reason being that my game engin wasnt outputting the format the the API required it to be. So I ended up scrapping my game engin, implemented the API to ensure what my game engin generates can be used by the API. This was the main obstical that I ran into while mfinishing this project.
